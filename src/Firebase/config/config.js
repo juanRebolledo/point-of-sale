@@ -1,6 +1,7 @@
 const firebaseConfig = {
   apiKey: 'AIzaSyA65WcggW9lBuKuiOBkoDon8PL2XZyoUcY',
   authDomain: 'point-of-sale-daa6e.firebaseapp.com',
+  databaseURL: 'https://point-of-sale-daa6e-default-rtdb.firebaseio.com/',
   projectId: 'point-of-sale-daa6e',
   storageBucket: 'point-of-sale-daa6e.appspot.com',
   messagingSenderId: '659100724094',
