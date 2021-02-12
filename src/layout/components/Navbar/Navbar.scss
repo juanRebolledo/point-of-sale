@@ -1,0 +1,16 @@
+@import "scss/variables.scss";
+
+.navbar {
+  background-color: #fff;
+  height: 64px;
+
+  .nav-store a {
+    font-size: 1.2rem;
+    color: $secondary !important;
+
+    &:hover {
+      text-decoration: none;
+      color: darken($secondary, 15%) !important;
+    }
+  }
+}

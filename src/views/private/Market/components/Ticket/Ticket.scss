@@ -1,0 +1,13 @@
+@import "scss/variables.scss";
+
+.ticket {
+  background-color: $white;
+  border: 2px solid $primary;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30 );
+  width: 100%;
+
+  &__total {
+    font-size: 1.8rem;
+    color: $secondary;
+  }
+}

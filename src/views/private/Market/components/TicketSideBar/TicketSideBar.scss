@@ -1,0 +1,63 @@
+.sidebare {
+  z-index: 100;
+  .ticket-siderbar {
+    .btn-down {
+      background-color: transparent !important;
+      border: none !important;
+      color: black;
+      font-size: 1.5em;
+    }
+
+    .btn-down:hover {
+      color: rgb(82, 79, 79);
+    }
+
+    .container-ticket {
+      background-color: #f8f9fb;
+      border-radius: 0.4em;
+      border-left: 1px solid #e9ecef;
+      width: 25%;
+    }
+
+    .container-ticket {
+      overflow-y: overlay;
+    }
+
+    .container-ticket::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media only screen and (max-width: 991px) {
+      .container-ticket {
+        padding: 0 !important;
+        width: 100%;
+
+        .product-ticket {
+          height: calc(100% - 60px);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container-s {
+    display: none;
+  }
+
+  .sidebare {
+    left: 0;
+    margin-top: 1000px;
+    min-width: 100%;
+    position: fixed;
+    transition: all 0.25s ease-in-out;
+    top: 0;
+  }
+
+  .sidebare.is-open {
+    margin-top: 0;
+    max-width: 100%;
+    min-width: 100%;
+    transition: 0.25s;
+  }
+}

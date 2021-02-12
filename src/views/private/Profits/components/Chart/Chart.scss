@@ -1,0 +1,42 @@
+.chart-container {
+  background: rgb(243, 243, 243);
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  width: 80%;
+
+  .form-control {
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    height: 38px;
+    top: 20px;
+    left: 75%;
+    position: absolute;
+    width: 140px;
+  }
+
+  canvas {
+    height: 350px !important;
+    width: 100% !important;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .chart-container {
+    width: 100%;
+
+    .form-control {
+      left: 70%;
+      width: 110px;
+    }  
+  }
+}
+
+@media (max-width: 450px) {
+  .chart-container .form-control {
+    left: calc(50% - 55px);
+  }
+}

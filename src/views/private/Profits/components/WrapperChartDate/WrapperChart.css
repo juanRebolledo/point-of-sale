@@ -1,0 +1,27 @@
+.wrapper-chart {
+  height: calc(100vh - 125px);
+  overflow: auto;
+}
+
+.container-balance {
+  justify-content: space-evenly;
+  height: 150px;
+}
+
+.container-balance,
+.card-income-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .container-balance {
+    height: 260px;
+  }
+
+  .card-income-container {
+    height: 100px;
+    width: 98%;
+  }
+}

@@ -1,0 +1,27 @@
+@mixin button-colors($normal, $text, $border: "") {
+  @if $border == "" {
+    $border: $normal;
+  }
+
+  $accent: darken($normal, 5%);
+
+  background: $normal;
+  border-color: $border;
+  color: $text;
+
+  &:hover {
+    background: $accent;
+    color: $text;
+  }
+
+  &:active {
+    background: $accent;
+    border-color: $border;
+  }
+
+  &:active,
+  &:visited {
+    color: $text;
+    box-shadow: initial;
+  }
+}

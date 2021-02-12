@@ -1,0 +1,15 @@
+{
+  "short_name": "Tornillos Chava",
+  "name": "Tornillos Chava - Admin",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "image/png",
+      "type": "488x470"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

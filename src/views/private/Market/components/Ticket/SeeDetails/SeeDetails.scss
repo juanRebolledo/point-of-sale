@@ -1,0 +1,39 @@
+@import "scss/variables.scss";
+
+$wrapped-show-max-height: 500px;
+
+.see-details {
+  background-color: $primary;
+  color: $white;
+  z-index: 100;
+
+  &__text {
+    color: $white;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &__wrapped {
+    max-height: $wrapped-show-max-height;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.25s ease-in-out;
+
+    .d-size {
+      max-height: calc(100vh - 400px);
+    }
+
+    &--hide {
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-20px);
+
+      .d-size {
+        max-height: 0;
+      }
+    }
+  }
+}

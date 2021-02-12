@@ -1,0 +1,74 @@
+@import 'scss/variables.scss';
+
+.category-card{
+  &--active {
+    .card {
+      background-color: $white-dark !important;
+      border-color: $white-dark !important;
+    }
+  }
+
+  .bg-card {
+    background-color: rgb(252, 252, 252) !important;
+  }
+
+  .border-se {
+    border-left: 2px solid rgba(218, 214, 214, 0.692);
+  }
+
+  .card-shadow:hover {
+    box-shadow: 2px 5px 10px #0000004d;
+    transition-duration: 0.5s;
+  }
+
+  .subcategory  {
+    font-size: 1rem;
+  }
+
+  .style-button {
+    background-color: #1d1b32 !important ;
+  }
+
+  .style-button:hover {
+    background-color: #312d53 !important ;
+  }
+
+  .style-button a {
+    color: #fff;
+  }
+
+  .style-button-delete {
+    background-color: rgb(247, 66, 66) !important;
+  }
+
+  .style-button-delete:hover {
+    background-color: rgb(255, 89, 89) !important;
+  }
+
+  .style-button,
+  .style-button-delete {
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    padding: 3px !important;
+    border: none !important;
+  }
+
+  .titulocategory {
+    font-size: 1.188rem;
+  }
+
+  .btn {
+    border-width: 2px;
+  }
+
+  .location-label {
+    color: $secondary;
+    font-size: .9rem;
+    font-style: italic;
+  }
+
+  .select-checkbox {
+    transform: scale(2);
+  }
+}

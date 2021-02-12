@@ -1,0 +1,41 @@
+.card-income-container {
+  border-radius: 10px;
+  box-shadow: 0 0 0.25rem 0 #ced4da;
+  /* color: #fff; */
+  display: flex;
+  height: 65%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.card-income-container .card-text {
+  font-size: 1em;
+  height: 30px;
+}
+
+.card-income-container .card-balance {
+  font-size: 2em;
+  height: 60px;
+  font-weight: bold;
+}
+
+@media (max-width: 456px) {
+  .card-income-container {
+    width: 40%;
+  }
+
+  .container-balance {
+    height: 120px;
+  }
+
+  .card-income-container .card-text {
+    font-size: 0.8em;
+    height: 19px;
+  }
+
+  .card-income-container .card-balance {
+    font-size: 1.5em;
+    height: 45px;
+  }
+}

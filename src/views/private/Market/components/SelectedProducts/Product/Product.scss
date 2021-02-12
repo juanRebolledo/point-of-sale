@@ -1,0 +1,40 @@
+@import "scss/variables.scss";
+
+.product {
+  &__price {
+    color: $secondary;
+    font-size: 1.4rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    width: calc(100% - 20px);
+  }
+
+  &__custom-input {
+    width: 45px !important;
+  }
+
+  .wrap-scale {
+    width: 33%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .product {
+    &-actions {
+      overflow-x: auto;
+      width: 100%;
+
+      .product__custom-input {
+        width: 100px;
+      }
+
+      .wrap-scale {
+        flex: none;
+        min-width: 135px;
+        max-width: 150px;
+      }
+    }
+  }
+}

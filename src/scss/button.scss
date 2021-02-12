@@ -1,0 +1,16 @@
+@import 'scss/variables.scss';
+@import 'scss/mixins/button-color.scss';
+
+.button {
+  &-blue { @include button-colors($color-blue, $white) }
+
+  &-blue-outline { @include button-colors($white, $primary, $color-blue) }
+
+  &-green { @include button-colors($color-green, $white) }
+
+  &-green-outline { @include button-colors($white, $primary,$color-green) }
+
+  &-red { @include button-colors($color-red, $white) }
+
+  &-red-outline { @include button-colors($white, $primary, $color-red) }
+}

@@ -1,0 +1,63 @@
+@import "./variables.scss";
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+);
+
+/* Container */
+
+.container-app {
+  background-color: $white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  flex: 1;
+  padding: 0 30px 30px;
+  margin: 15px;
+  overflow-y: auto;
+
+  .header-app {
+    background: $white;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+  }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 991px) {
+  .container-app {
+    margin: 10px;
+    padding: 0 15px 15px;
+    width: calc(100% - 20px);
+
+    .header-app {
+      height: 110px;
+      align-content: space-around;
+    }
+  }
+}
+
+/* Modal */
+
+.modal-dialog {
+  max-width: 700px !important;
+}
+
+/* Table */
+
+.table th {
+  color: $color-gray;
+  background-color: $white;
+  border-top: 0px !important;
+  border-bottom: 2px solid $primary !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+@import "bootstrap";
+@import "./button.scss";

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'DINPro-black';
+  src:  url('../assets/fonts/dinpro/DINPro-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DINPro-bold';
+  src:  url('../assets/fonts/dinpro/DINPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DINPro-light';
+  src:  url('../assets/fonts/dinpro/DINPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DINPro-medium';
+  src:  url('../assets/fonts/dinpro/DINPro-Medium.ttf') format('truetype');
+}

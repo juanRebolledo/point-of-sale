@@ -1,0 +1,20 @@
+.scaleinput {
+  .no-spinner::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .no-spinner {
+    border-radius: 0;
+  }
+
+  .decrease {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .increase {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
