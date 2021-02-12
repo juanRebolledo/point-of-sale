@@ -1,4 +1,4 @@
-# Tornilleria Chava Admin
+# Punto de venta
 
 ## Installation
 
@@ -7,8 +7,9 @@
 - install eslint extension (vs code)
 
 ## Use
- - npm start
- - npm run lint (check the syntax error)
+
+- npm start
+- npm run lint (check the syntax error)
 
 ## Docs
 
@@ -19,6 +20,3 @@
 [react-router-dom](https://reactrouter.com/web/guides/quick-start)
 
 [ReactStrap](https://reactstrap.github.io/)
-
-
-
