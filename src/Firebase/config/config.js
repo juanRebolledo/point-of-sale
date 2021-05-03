@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: 'AIzaSyA65WcggW9lBuKuiOBkoDon8PL2XZyoUcY',
-  authDomain: 'point-of-sale-daa6e.firebaseapp.com',
-  databaseURL: 'https://point-of-sale-daa6e-default-rtdb.firebaseio.com/',
-  projectId: 'point-of-sale-daa6e',
-  storageBucket: 'point-of-sale-daa6e.appspot.com',
-  messagingSenderId: '659100724094',
-  appId: '1:659100724094:web:e398622dbdfaae0215612f',
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGE_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 }
 
 export default firebaseConfig

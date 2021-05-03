@@ -10,7 +10,11 @@ import AddStoreCard from './components/AddStoreCard'
 import StoreCard from './components/StoreCard/StoreCard'
 
 const Home = () => {
-  const { data, loading, path } = useFirebaseQuery({ isUriPriority: true, orderBy: 'name', uri: '/' })
+  const { data, loading, path } = useFirebaseQuery({
+    isUriPriority: true,
+    orderBy: 'name',
+    uri: '/',
+  })
   const { setErrorFirebase } = useContext(UserContext)
 
   const handleAddStore = (store) => {
@@ -38,14 +42,22 @@ const Home = () => {
 
       <Row className={loading ? 'd-flex justify-content-center w-100' : ''}>
         {/* eslint-disable-next-line no-nested-ternary */}
-        {loading ? <Spinner /> : data.length > 0 ? data.filter((item) => item.id && item.name).map((store) => (
-          <StoreCard
-            key={store.id}
-            store={store}
-            deleteStore={handleRemoveStore}
-            updateStore={handleUpdateStore}
-          />
-        )) : <NoItemsCreated text="Aún no hay sucursales creadas" />}
+        {loading ? (
+          <Spinner />
+        ) : data.length > 0 ? (
+          data
+            .filter((item) => item.id && item.name)
+            .map((store) => (
+              <StoreCard
+                key={store.id}
+                store={store}
+                deleteStore={handleRemoveStore}
+                updateStore={handleUpdateStore}
+              />
+            ))
+        ) : (
+          <NoItemsCreated text="Aún no hay sucursales creadas" />
+        )}
       </Row>
     </Layout>
   )

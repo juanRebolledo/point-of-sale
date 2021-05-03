@@ -1,12 +1,12 @@
-import React, { useContext } from 'react'
-import { UserContext } from 'containers/User/UserContext'
-import Routes from 'routes/Routes'
-import SimpleModal from 'shared/Modal/SimpleModal'
+import React, { useContext } from "react";
+import { UserContext } from "containers/User/UserContext";
+import Routes from "routes/Routes";
+import SimpleModal from "shared/Modal/SimpleModal";
 
 const App = () => {
-  const { errorFirebase, setErrorFirebase } = useContext(UserContext)
+  const { errorFirebase, setErrorFirebase } = useContext(UserContext);
 
-  const removeErrorFirebase = () => setErrorFirebase(false)
+  const removeErrorFirebase = () => setErrorFirebase(false);
 
   return (
     <>
@@ -22,12 +22,12 @@ const App = () => {
       >
         <h2>Ha ocurrido un error!</h2>
         <p>
-          Si esto persiste despues de unos minutos
-          contactese con Emmanuel o Juan (Dile a Emmanuel)
+          Si esto persiste despues de unos minutos contactese con Emmanuel o
+          Juan (Dile a Emmanuel)
         </p>
       </SimpleModal>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
