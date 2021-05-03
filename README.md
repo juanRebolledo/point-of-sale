@@ -1,22 +1,3 @@
-# Punto de venta
-
-## Installation
-
-- git clone this repo
-- npm install
-- install eslint extension (vs code)
-
-## Use
-
-- npm start
-- npm run lint (check the syntax error)
-
-## Docs
-
-[Bootstrap](https://getbootstrap.com/)
-
-[Formik](https://formik.org/docs/overview)
-
-[react-router-dom](https://reactrouter.com/web/guides/quick-start)
-
-[ReactStrap](https://reactstrap.github.io/)
+# Credentials
+email: test@test.com
+password: 12345678
