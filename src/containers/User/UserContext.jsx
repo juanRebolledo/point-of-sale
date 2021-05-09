@@ -26,7 +26,7 @@ const UserContextProvider = ({ children }) => {
   const authListener = async () => {
     await Firebase.getCurrentUser((user) => {
       if (user) setAuth(true)
-      if (!user) clearLocalStorage()
+      clearLocalStorage()
 
       setLoading(false)
     })
