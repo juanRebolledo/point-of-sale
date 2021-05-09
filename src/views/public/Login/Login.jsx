@@ -1,5 +1,4 @@
 import React from 'react'
-import cashRegisterImage from 'assets/img/retailer.png'
 import LoginForm from './components/LoginForm/LoginForm'
 
 const LoginView = () => {
