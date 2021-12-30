@@ -18,9 +18,9 @@ const LoginForm = () => {
       <div className="col-md-4 mx-auto">
         <Form>
           <div className="card card-body h-100 justify-content-div">
-            <FormField name="email" label="Correo Electronico" />
+            <FormField name="email" label="Correo Electronico (test@test.com)" />
 
-            <FormField name="password" component="password" label="Contaseña" />
+            <FormField name="password" component="password" label="Contaseña (12345678)" />
 
             {message && <div className="text-danger py-3">{message}</div>}
 
